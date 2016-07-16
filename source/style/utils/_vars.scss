@@ -1,0 +1,55 @@
+//** Colors
+$base-color: #323232;
+$base-color-light: #9f9e9e;
+$light-color: #fff;
+$primary-color: #28bbef;
+$attention-color: #ef4534;
+$bg-color: #ececec;
+
+//** Body
+$gutter: 20px;
+$body-bg: $light-color;
+$border-radius-base: 5px;
+$text-color: $base-color;
+$text-color-light: $light-color;
+
+//** Links
+$link-color: $primary-color !default;
+$link-hover-color: $primary-color !default;
+$link-decoration: none !default;
+$link-hover-decoration: none !default;
+
+//** Typography
+$font-family-base: "ProximaNova", Arial, sans-serif !default;
+$font-family-heading: "Panton" !default;
+
+$font-size-base: 16px !default;
+$font-size-l: 35px !default;
+$font-size-xl: 63px !default;
+$font-size-h1: ceil(($font-size-base * 2)) !default;
+$font-size-h2: ceil(($font-size-base * 1.8)) !default;
+$font-size-h3: ceil(($font-size-base * 1.4)) !default;
+$font-size-h4: ceil(($font-size-base * 0.8)) !default;
+$font-size-h5: ceil(($font-size-base * 0.8)) !default;
+$font-size-h6: ceil(($font-size-base * 0.8)) !default;
+
+//** Buttons
+$btn-border-width: 1px;
+$btn-font-size: $font-size-base;
+$btn-height: 45px;
+$btn-padding: 0 $gutter;
+
+
+//** Forms
+$input-bg-color: $light-color;
+$input-height: 45px;
+$input-padding: 0 $gutter;
+$textarea-height: 140px;
+$input-placeholder-color: $base-color;
+$input-checkbox-size: 20px;
+
+//** Tables
+$th-bg-color: $bg-color;
+$td-bg-color: transparent;
+$td-brd-color: $bg-color;
+$td-padding: $gutter/2 $gutter;

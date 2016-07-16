@@ -1,0 +1,62 @@
+@mixin btn-theme($color-text, $color-bg, $inverse: false) {
+  color: $color-text;
+  @if $inverse {
+    background-color: $color-bg;
+    border-color: $color-bg;
+    &:hover,
+    &.__ac {
+      color: $color-bg;
+      background-color: transparent;
+    }
+  } @else {
+    background-color: transparent;
+    border-color: $color-bg;
+    &:hover,
+    &.__ac {
+      color: #fff;
+      background-color: $color-bg;
+    }
+  }
+}
+
+@mixin media($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin widescreen() { // min 1800
+  @media screen and (min-width: 1800px) {
+    @content;
+  }
+}
+
+@mixin desktop() { //1800-1200
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin laptop() { // 1200-992
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablets() { // ipad
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablets_() {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phones() { // iphone
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}

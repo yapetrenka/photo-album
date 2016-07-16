@@ -1,0 +1,29 @@
+.bold {font-weight:bold;}
+
+.clearfix {
+  @extend %clearfix;
+}
+
+.design-elements {
+  margin: 40px auto;
+  max-width: 1000px;
+  padding: 0 $gutter;
+  &__row {
+    display: flex;
+    margin-left: -$gutter;
+  }
+  &__item {
+    background-color: rgba($base-color, .3);
+    border-radius: $border-radius-base;
+    flex: 1;
+    margin: 0 0 $gutter $gutter;
+    padding: $gutter;
+  }
+}
+
+.os-animation {
+  opacity: 0;
+  &.animated {
+    opacity: 1;
+  }
+}

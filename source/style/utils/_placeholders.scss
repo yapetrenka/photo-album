@@ -1,0 +1,64 @@
+%btn {
+  border: none;
+  cursor: pointer;
+  height: $btn-height;
+  line-height: $btn-height;
+  outline: none;
+  padding: $btn-padding;
+  text-align: center;
+  text-decoration: none;
+  transition: (all .2s ease);
+  @include phones {
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+%btn-ext {
+  border-radius: $border-radius-base;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+%form-element {
+  background-color: $input-bg-color;
+  border: none;
+  border-radius: $border-radius-base;
+  color: $text-color;
+  display: inline-block;
+  height: $input-height;
+  margin-bottom: $gutter;
+  outline: none;
+  padding: $input-padding;
+  text-align: left;
+  vertical-align: middle;
+  width: 100%;
+  &:focus {
+    box-shadow: 0 0 3px 1px rgba($primary-color, .6);
+  }
+  @include phones {
+    height: 40px;
+  }
+}
+
+%clearfix {
+  &:before,
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+%centered-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%centered-self {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
