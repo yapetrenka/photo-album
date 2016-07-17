@@ -1,7 +1,106 @@
 .welcome-page {
-
+  background: url("../img/skin/main_bg.jpg") no-repeat 50% 100%;
+  background-size: cover;
+  padding: $gutter;
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @include phones {
+    padding: $gutter/2;
+  }
 }
 
 .welcome {
+  margin-bottom: $gutter*2;
+  &__ttl {
+    color: $light-color;
+    font-family: $font-family-heading;
+    font-size: rem(42px);
+    margin-bottom: rem(30px);
+    text-align: center;
+  }
+  &__text {
+    color: $light-color;
+    font-size: rem(18px);
+    line-height: 1.5;
+    text-align: center;
+  }
+  &__item {
+    float: left;
+    position: relative;
+    backface-visibility: hidden;
+    margin-left: -100%;
+    transform-style: preserve-3d;
+    transition: all .4s ease-in-out;
+    transform: rotateY(-180deg);
+    width: 100%;
+    z-index: 1;
+    &:first-child {
+      margin-left: 0;
+    }
+    &_active {
+      transform: rotateX(0) rotateY(0);
+      z-index: 2;
+      .flip & {
+        transform: rotateY(180deg);
+      }
+    }
+    &__back {
+      margin-left: -380px;
+      transform: rotateY(-180deg);
+      z-index: 1;
+      .flip & {
+        transform: rotateX(0) rotateY(0);
+        z-index: 3;
+      }
+    }
+    &-wrap {
+      margin: 0 auto;
+      max-width: 550px;
+    }
+  }
+}
 
+.panel {
+  background-color: $light-color;
+  border-radius: $border-radius-base;
+  margin: rem(30px) auto;
+  overflow: hidden;
+  padding: 0 $gutter;
+  width: 280px;
+  &__inputs {
+    border-top: 1px solid $base-color-lighter;
+    margin: -1px (-$gutter) 0;
+  }
+  &__note {
+    font-size: rem(14px);
+    margin: 7px 0 20px;
+    &_top {
+      margin-top: 20px;
+    }
+    &-ttl {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    &_bottom {
+      text-align: center;
+    }
+  }
+  .btn {
+    display: block;
+    margin: 20px 0 5px;
+    width: 100%;
+  }
+}
+
+.welcome-copy {
+  color: $light-color;
+  font-weight: 300;
+  margin: $gutter 0;
+  text-align: center;
+  @include tablets {
+    font-size: 14px;
+  }
 }

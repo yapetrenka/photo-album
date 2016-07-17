@@ -1,20 +1,16 @@
 @mixin btn-theme($color-text, $color-bg, $inverse: false) {
   color: $color-text;
   @if $inverse {
-    background-color: $color-bg;
-    border-color: $color-bg;
-    &:hover,
-    &.__ac {
+    background-color: transparent;
+    border-color: $color-text;
+    &:hover {
       color: $color-bg;
-      background-color: transparent;
+      background-color: $color-text;
     }
   } @else {
-    background-color: transparent;
-    border-color: $color-bg;
-    &:hover,
-    &.__ac {
-      color: #fff;
-      background-color: $color-bg;
+    background-color: $color-bg;
+    &:hover {
+      background-color: darken($color-bg, 8%);
     }
   }
 }

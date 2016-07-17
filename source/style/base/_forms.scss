@@ -73,25 +73,37 @@
 }
 
 .input-addon {
+  border-bottom: 1px solid $base-color-lighter;
   display: flex;
-  margin-bottom: $gutter;
+  flex-direction: row-reverse;
+  height: 40px;
   &__item {
-    background-color: $bg-color;
-    border-radius: $border-radius-base 0 0 $border-radius-base;
     position: relative;
-    width: 45px;
+    width: 35px;
   }
   &__icon {
-    opacity: .2;
+    fill: $base-color-light;
     position: absolute;
-    left: 50%;
+    right: 0;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
   }
   &__field {
-    border-radius: 0 $border-radius-base $border-radius-base 0;
+    border: none;
     flex: 1;
-    margin-bottom: 0;
-    position: relative;
+    outline: none;
+    padding: 0 10px;
+    &:focus + .input-addon__item .icon {
+      fill: $primary-color;
+    }
   }
+}
+
+.error-message {
+  background-color: transparentize($secondary-color, .85);
+  border-radius: 3px;
+  color: transparentize($base-color, .4);
+  font-size: rem(14px);
+  font-weight: bold;
+  padding: 8px 10px;
 }

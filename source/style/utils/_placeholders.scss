@@ -1,22 +1,19 @@
 %btn {
-  border: none;
+  border: $btn-border-width solid transparent;
+  border-radius: $border-radius-base;
   cursor: pointer;
+  display: inline-block;
+  font: {
+    family: $font-family-heading;
+    size: rem(14px);
+  };
   height: $btn-height;
-  line-height: $btn-height;
+  line-height: $btn-height - ($btn-border-width*2);
   outline: none;
   padding: $btn-padding;
   text-align: center;
   text-decoration: none;
   transition: (all .2s ease);
-  @include phones {
-    height: 40px;
-    line-height: 40px;
-  }
-}
-
-%btn-ext {
-  border-radius: $border-radius-base;
-  display: inline-block;
   vertical-align: middle;
 }
 

@@ -1,24 +1,15 @@
 .btn {
   @extend %btn;
-  @extend %btn-ext;
   &_primary {
-    background-color: $primary-color;
-    color: $light-color;
-    &:hover {
-      background-color: $primary-color;
+    @include btn-theme($light-color, $primary-color);
+    &-inverse {
+      @include btn-theme($primary-color, $light-color, true);
     }
   }
-  &_light {
-    background-color: transparent;
-    border: $btn-border-width solid $light-color;
-    color: $light-color;
-    line-height: $btn-height - ($btn-border-width*2);
-    &:hover {
-      background-color: $light-color;
-      color: $primary-color;
-    }
-    @include phones {
-      line-height: 38px;
+  &_secondary {
+    @include btn-theme($light-color, $secondary-color);
+    &-inverse {
+      @include btn-theme($secondary-color, $light-color, true);
     }
   }
 }

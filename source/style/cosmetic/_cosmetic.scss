@@ -13,7 +13,7 @@
     margin-left: -$gutter;
   }
   &__item {
-    background-color: rgba($base-color, .3);
+    background-color: $bg-color;
     border-radius: $border-radius-base;
     flex: 1;
     margin: 0 0 $gutter $gutter;
@@ -26,4 +26,10 @@
   &.animated {
     opacity: 1;
   }
+}
+
+.base-ttl {
+  font-size: rem(42px);
+  font-family: $font-family-heading;
+  margin-bottom: rem(30px);
 }
