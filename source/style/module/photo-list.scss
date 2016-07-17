@@ -1,0 +1,25 @@
+.photo-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  &__item {
+    margin-left: 20px;
+    &-wrap {
+      margin-bottom: 20px;
+      width: 25%;
+    }
+  }
+}
+
+.album-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  &__item {
+    margin-left: 20px;
+    &-wrap {
+      margin-bottom: 20px;
+      width: 20%;
+    }
+  }
+}

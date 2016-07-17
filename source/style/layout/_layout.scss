@@ -9,3 +9,15 @@
 .main {
   flex: 1 0 auto;
 }
+
+.layout-main {
+  margin: 0 auto;
+  max-width: 1700px;
+  padding: 0 60px;
+  @include tablets {
+    padding: 0 25px;
+  }
+  @include phones {
+    padding: 0 10px;
+  }
+}

@@ -18,6 +18,9 @@ a {
   &:hover, &:active {
     text-decoration: $link-hover-decoration;
   }
+  .icon {
+    transition: all .2s ease;
+  }
 }
 
 table {

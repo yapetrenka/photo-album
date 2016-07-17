@@ -10,6 +10,8 @@ include("./common/head.tpl.php");
             <button class="btn btn_primary-inverse">Кнопка</button>
             <button class="btn btn_secondary">Кнопка</button>
             <button class="btn btn_secondary-inverse">Кнопка</button>
+            <button class="btn btn_light">Кнопка</button>
+            <button class="btn btn_light-inverse">Кнопка</button>
         </div>
         <div class="design-elements__item">
             <div class="base-ttl">Иконки</div>

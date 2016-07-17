@@ -24,7 +24,6 @@
   color: $text-color;
   display: inline-block;
   height: $input-height;
-  margin-bottom: $gutter;
   outline: none;
   padding: $input-padding;
   text-align: left;
@@ -45,6 +44,12 @@
     content: '';
     display: table;
   }
+}
+
+%justify-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 %centered-content {

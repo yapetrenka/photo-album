@@ -12,4 +12,14 @@
       @include btn-theme($secondary-color, $light-color, true);
     }
   }
+  &_light {
+    @include btn-theme($base-color-light, $light-color);
+    &:hover {
+      background-color: $primary-color;
+      color: $light-color;
+    }
+    &-inverse {
+      @include btn-theme($base-color-light, $light-color, true);
+    }
+  }
 }

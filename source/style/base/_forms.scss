@@ -73,7 +73,7 @@
 }
 
 .input-addon {
-  border-bottom: 1px solid $base-color-lighter;
+  border-bottom: 1px solid rgba($base-color-lighter, .5);
   display: flex;
   flex-direction: row-reverse;
   height: 40px;
@@ -82,7 +82,7 @@
     width: 35px;
   }
   &__icon {
-    fill: $base-color-light;
+    fill: $base-color-lighter;
     position: absolute;
     right: 0;
     top: 50%;

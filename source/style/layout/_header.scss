@@ -1,3 +1,96 @@
 .header {
+  background: {
+    size: cover;
+    position: 50% 0;
+    repeat: no-repeat;
+  };
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    height: 240px;
+    padding: 20px 0;
+  }
+  &__actions {
+    text-align: right;
+    &-item {
+      margin-bottom: 10px;
+    }
+  }
+  &__panel {
+    background-color: transparentize($base-color-lightest, .1);
+    padding: 10px 0;
+  }
+}
 
+.user {
+  @extend %justify-content;
+  color: $light-color;
+  &__ava {
+    border: 3px solid $light-color;
+    border-radius: 50%;
+    flex: none;
+    height: 126px;
+    margin-right: $gutter*2;
+    overflow: hidden;
+    width: 126px;
+  }
+  &__info {
+    max-width: 480px;
+  }
+  &__name {
+    font-size: rem(21px);
+    font-family: $font-family-heading;
+    margin-bottom: rem(10px);
+  }
+  &__desc {
+    line-height: 1.5;
+  }
+  &__social {
+    margin-top: rem(15px);
+  }
+}
+
+.social {
+  &__item {
+    display: inline-block;
+    margin-right: 5px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__icon {
+    fill: $light-color;
+    opacity: .8;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: flex-end;
+  &__form {
+    position: relative;
+    width: 380px;
+  }
+  &__input {
+    padding-left: 45px;
+    &:focus + .search__btn .icon {
+      fill: $primary-color;
+    }
+  }
+  &__btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    .icon {
+      fill: $base-color-light;
+    }
+  }
 }
