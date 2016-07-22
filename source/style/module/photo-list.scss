@@ -3,23 +3,146 @@
   flex-wrap: wrap;
   margin-left: -20px;
   &__item {
-    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 25%;
+    @include desktop {
+      width: (100%/3);
+    }
+    &_album {
+      width: 20%;
+      @include desktop {
+        width: 25%;
+      }
+      .photo-list__info {
+        justify-content: space-between;
+      }
+    }
     &-wrap {
-      margin-bottom: 20px;
-      width: 25%;
+      background-color: $light-color;
+      border-radius: 3px;
+      box-shadow: 0 1px 3px rgba(#000, .15);
+      margin-left: 20px;
+      overflow: hidden;
     }
   }
-}
-
-.album-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -20px;
-  &__item {
-    margin-left: 20px;
-    &-wrap {
-      margin-bottom: 20px;
-      width: 20%;
+  &__photo {
+    position: relative;
+  }
+  &__hover {
+    background: linear-gradient(to bottom,  rgba(#000, .25) 0%, rgba(#000, .65) 100%);
+    color: $light-color;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity .3s ease;
+    width: 100%;
+    &:hover {
+      opacity: 1;
+    }
+    &-content {
+      padding: 20px;
+      position: absolute;
+      bottom: 0;
+    }
+    &-desc {
+      margin-bottom: 10px;
+      max-width: 200px;
+    }
+    &-count {
+      font-weight: bold;
+    }
+  }
+  &__loupe {
+    @extend %centered-self;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    &-ava {
+      border-radius: 50%;
+      height: 50px;
+      margin-right: 20px;
+      overflow: hidden;
+      position: relative;
+      width: 50px;
+      z-index: 1;
+      &-hover {
+        background-color: rgba(#000, .7);
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity .2s ease;
+        width: 100%;
+        .icon {
+          @extend %centered-self;
+          fill: $light-color;
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    .photo-list__actions-icon {
+      opacity: .2;
+    }
+  }
+  &__name {
+    margin-bottom: 10px;
+  }
+  &__actions {
+    &-item {
+      font-family: $font-family-heading;
+      display: inline-block;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &-link {
+      color: $text-color;
+      &:hover {
+        .icon {
+          fill: $secondary-color;
+          opacity: 1;
+        }
+      }
+    }
+    &-icon {
+      margin-right: 5px;
+    }
+  }
+  &__info-bottom {
+    background-color: $bg-color;
+    padding: 10px 20px;
+    text-align: right;
+  }
+  &__album-name {
+    color: $text-color;
+    font-weight: bold;
+    .icon {
+      opacity: .2;
+      margin-right: 5px;
+    }
+    &:hover {
+      .icon {
+        opacity: 1;
+      }
+    }
+  }
+  &__album-edit {
+    color: $text-color;
+    .icon {
+      opacity: .2;
+    }
+    &:hover {
+      .icon {
+        opacity: 1;
+      }
     }
   }
 }

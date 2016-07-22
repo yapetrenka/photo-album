@@ -1,3 +1,45 @@
 .footer {
+  background: {
+    size: cover;
+    position: 50% 70%;
+    repeat: no-repeat;
+  };
+  color: $light-color;
+  position: relative;
+  &:before {
+    background-color: rgba(#000, .6);
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  &__container {
+    @extend %justify-content;
+    padding: 20px 0;
+    position: relative;
+  }
+  &__text {
 
+  }
+  &__copy {
+    opacity: .4;
+    text-align: right;
+  }
+  &__page-move {
+    margin: 0 20px;
+  }
+}
+
+.page-move {
+  &__link {
+    display: block;
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+  &__icon {
+    fill: $light-color;
+  }
 }
