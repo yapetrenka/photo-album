@@ -24,6 +24,10 @@
     margin: 0 0 $gutter $gutter;
     padding: $gutter;
   }
+  &__popup {
+    background-color: rgba(#000, .5);
+    @extend %clearfix;
+  }
 }
 
 .os-animation {

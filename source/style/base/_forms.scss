@@ -107,3 +107,51 @@
   font-weight: bold;
   padding: 8px 10px;
 }
+
+.form {
+  &__row {
+    display: flex;
+    margin-bottom: $gutter;
+  }
+  &__label {
+    flex: none;
+    font-weight: bold;
+    padding: 11px 0;
+    text-align: right;
+    width: 110px;
+  }
+  &__field {
+    display: flex;
+    align-items: center;
+    flex: auto;
+    &-item {
+      flex: 1;
+      margin-left: $gutter;
+      &_no-flex {
+        flex: none;
+      }
+      &_fix {
+        flex: .5;
+      }
+    }
+    &-note {
+      font-size: 14px;
+      font-style: italic;
+      line-height: 1;
+      margin-left: $gutter;
+    }
+  }
+  &__img {
+    background: {
+      position: 50% 50%;
+      repeat: no-repeat;
+      size: cover;
+    };
+    border-radius: 50%;
+    display: inline-block;
+    height: 50px;
+    margin: -18px 0;
+    overflow: hidden;
+    width: 50px;
+  }
+}

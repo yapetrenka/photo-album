@@ -22,4 +22,21 @@
       @include btn-theme($base-color-light, $light-color, true);
     }
   }
+  &_reset {
+    border-color: transparent;
+  }
+  &_file {
+    position: relative;
+    overflow: hidden;
+    .file-inp {
+      cursor: pointer;
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    input[type="file"]::-webkit-file-upload-button {
+      cursor: pointer;
+    }
+  }
 }

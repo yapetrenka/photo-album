@@ -16,4 +16,22 @@ $(function(){
         return false;
     });
 
+    $('.open-popup-link').magnificPopup({
+        type: 'inline',
+        midClick: true
+    });
+
+
+    $(function () {
+        $('.open-popup-link').magnificPopup({
+            type: 'inline',
+            midClick: true
+        });
+        $(document).on('click', '.popup-close', function (e) {
+            e.preventDefault();
+            $.magnificPopup.close();
+        });
+    });
+
+
 });

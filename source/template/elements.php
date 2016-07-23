@@ -1,5 +1,5 @@
 <?
-$PAGE['meta_title'] = "Элементы дизайна";
+$PAGE['meta_title'] = "Элементы";
 include("./common/head.tpl.php");
 ?>
 <div class="design-elements">
@@ -93,6 +93,204 @@ include("./common/head.tpl.php");
             <svg class="icon svg-top-dims">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./../assets/img/icons/sprite.svg#top"></use>
             </svg>
+        </div>
+    </div>
+    <div class="design-elements__row">
+        <div class="design-elements__item">
+            <div class="base-ttl">Попапы</div>
+            <a href="#test_popup" class="btn btn_primary open-popup-link">Пример</a>
+            <a href="#profile_edit" class="btn btn_primary open-popup-link">Редактировать профиль</a>
+            <a href="#album_add" class="btn btn_primary open-popup-link">Добавить альбом</a>
+        </div>
+    </div>
+    <div class="design-elements__popup">
+        <div id="test_popup" class="popup mfp-hide">
+            <div class="popup__header">
+                <div class="popup__ttl">Тут заголовок</div>
+            </div>
+            <div class="popup__content">
+                Это пример всплывающего окна
+            </div>
+            <div class="popup__footer">
+                <div class="popup__footer-left">
+                    <a href="" class="btn btn_primary">Кнопочка</a>
+                    <a href="" class="">Отменить</a>
+                </div>
+                <div class="popup__footer-right">
+                    <a href="" class="btn btn_secondary">Кнопочка</a>
+                </div>
+            </div>
+        </div>
+        <div id="profile_edit" class="popup">
+            <form name="profile_edit" action="">
+                <div class="popup__header">
+                    <div class="popup__ttl">Редактировать профиль</div>
+                </div>
+                <div class="popup__content">
+                    <div class="form">
+                        <div class="form__row">
+                            <div class="form__label">
+                                Имя
+                            </div>
+                            <div class="form__field">
+                                <div class="form__field-item">
+                                    <input type="text" name="name" class="base-inp" value="">
+                                </div>
+                                <div class="form__field-item">
+                                    <input type="text" name="surname" class="base-inp" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__label">
+                                О себе
+                            </div>
+                            <div class="form__field">
+                                <div class="form__field-item">
+                                    <textarea name="about" class="base-textarea"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__label">
+                                <div class="form__img" style="background-image: url(./../assets/img/content/users/sm/user_<?=rand(1, 6)?>.jpg)"></div>
+                            </div>
+                            <div class="form__field">
+                                <div class="form__field-item form__field-item_no-flex">
+                                    <span class="btn btn_primary-inverse btn_file">
+                                        Загрузить фотографию
+                                        <input type="file" name="ava" class="file-inp">
+                                    </span>
+                                </div>
+                                <div class="form__field-note">(файл должен быть размером<br> не более 512 КБ)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__label">
+                                <div class="form__img" style="background-image: url(./../assets/img/content/photo/photo_preview/photo_<?=rand(1, 6)?>.jpg)"></div>
+                            </div>
+                            <div class="form__field">
+                                <div class="form__field-item form__field-item_no-flex">
+                                    <span class="btn btn_primary-inverse btn_file">
+                                        Загрузить фон
+                                        <input type="file" name="background" class="file-inp">
+                                    </span>
+                                </div>
+                                <div class="form__field-note">(файл должен быть размером<br> не более 1024 КБ)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row-separate"></div>
+                        <div class="form__row">
+                            <div class="form__label">
+                                Вконтакте
+                            </div>
+                            <div class="form__field">
+                                <div class="form__field-item form__field-item_fix">
+                                    <input type="text" name="vk" class="base-inp" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__label">
+                                Facebook
+                            </div>
+                            <div class="form__field">
+                                <div class="form__field-item form__field-item_fix">
+                                    <input type="text" name="fb" class="base-inp" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__label">
+                                Email
+                            </div>
+                            <div class="form__field">
+                                <div class="form__field-item form__field-item_fix">
+                                    <input type="email" name="email" class="base-inp" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__label">
+                                Twitter
+                            </div>
+                            <div class="form__field">
+                                <div class="form__field-item form__field-item_fix">
+                                    <input type="text" name="tw" class="base-inp" value="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__footer">
+                    <div class="popup__footer-left">
+                        <button type="submit" class="btn btn_primary">Сохранить</button>
+                        <button type="reset" class="btn btn_primary-inverse btn_reset">Отменить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="album_add" class="popup">
+            <form name="album_add" action="">
+                <div class="popup__header">
+                    <div class="popup__ttl">Добавить альбом</div>
+                </div>
+                <div class="popup__content">
+                    <div class="form">
+                        <div class="form__row">
+                            <div class="form__label">
+                                Название
+                            </div>
+                            <div class="form__field">
+                                <div class="form__field-item">
+                                    <input type="text" name="name" class="base-inp" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__label">
+                                Описание
+                            </div>
+                            <div class="form__field">
+                                <div class="form__field-item">
+                                    <textarea name="desc" class="base-textarea"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__label">
+                                <div class="form__img" style="background-image: url(./../assets/img/content/photo/photo_preview/photo_<?=rand(1, 6)?>.jpg)"></div>
+                            </div>
+                            <div class="form__field">
+                                <div class="form__field-item form__field-item_no-flex">
+                                    <span class="btn btn_primary-inverse btn_file">
+                                        Загрузить обложку
+                                        <input type="file" name="background" class="file-inp">
+                                    </span>
+                                </div>
+                                <div class="form__field-note">(файл должен быть размером<br> не более 1024 КБ)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__footer">
+                    <div class="popup__footer-left">
+                        <button type="submit" class="btn btn_primary">Сохранить</button>
+                        <button type="reset" class="btn btn_primary-inverse btn_reset">Отменить</button>
+                    </div>
+                    <div class="popup__footer-right">
+                        <button type="button" class="btn btn_secondary">
+                            <svg class="icon svg-delete-dims btn__icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./../assets/img/icons/sprite.svg#delete"></use>
+                            </svg>
+                            Удалить
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>

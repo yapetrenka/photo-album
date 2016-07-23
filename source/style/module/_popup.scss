@@ -1,0 +1,30 @@
+.popup {
+  background-color: $light-color;
+  position: relative;
+  margin: $gutter*2 auto;
+  max-width: 680px;
+  &__header {
+    background-color: $bg-color;
+    padding: 20px 60px 20px 20px;
+  }
+  &__ttl {
+    font-family: $font-family-heading;
+    font-size: rem(21px);
+  }
+  &__content {
+    padding: $gutter*2 $gutter;
+  }
+  &__footer {
+    background-color: $bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    .btn {
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

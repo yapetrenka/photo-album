@@ -139,6 +139,7 @@
     width: 380px;
   }
   &__input {
+    border-color: transparent;
     padding-left: 45px;
     &:focus + .search__btn .icon {
       fill: $primary-color;

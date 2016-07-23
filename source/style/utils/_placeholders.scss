@@ -19,7 +19,7 @@
 
 %form-element {
   background-color: $input-bg-color;
-  border: none;
+  border: 1px solid $input-border-color;
   border-radius: $border-radius-base;
   color: $text-color;
   display: inline-block;
@@ -30,7 +30,7 @@
   vertical-align: middle;
   width: 100%;
   &:focus {
-    box-shadow: 0 0 3px 1px rgba($primary-color, .6);
+    border-color: $primary-color;
   }
   @include phones {
     height: 40px;
