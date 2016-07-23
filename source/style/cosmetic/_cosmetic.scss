@@ -36,5 +36,9 @@
 .base-ttl {
   font-size: rem(42px);
   font-family: $font-family-heading;
-  margin-bottom: rem(30px);
+  margin: 0 0 rem(30px);
+}
+
+.wrap-padding {
+  padding: rem(40px);
 }

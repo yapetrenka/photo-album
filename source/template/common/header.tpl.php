@@ -52,6 +52,16 @@
                     </div>
                 </div>
                 <div class="header__actions">
+                    <?if ($page == 'user') {?>
+                        <div class="header__actions-item">
+                            <a href="" class="btn btn_light">
+                                <svg class="icon svg-home-dims btn__icon">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./../assets/img/icons/sprite.svg#home"></use>
+                                </svg>
+                                <span class="btn__text">На главную</span>
+                            </a>
+                        </div>
+                    <?} else {?>
                     <div class="header__actions-item">
                         <a href="" class="btn btn_light">
                             <svg class="icon svg-edit-dims btn__icon">
@@ -61,13 +71,14 @@
                         </a>
                     </div>
                     <div class="header__actions-item">
-                        <a href="" class="btn btn_primary">
+                        <a href="" class="btn btn_light">
                             <svg class="icon svg-off-dims btn__icon">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./../assets/img/icons/sprite.svg#off"></use>
                             </svg>
                             <span class="btn__text">Выйти</span>
                         </a>
                     </div>
+                    <?}?>
                 </div>
             </div>
         </div>

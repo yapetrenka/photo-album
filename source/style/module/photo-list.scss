@@ -15,6 +15,9 @@
       }
       .photo-list__info {
         justify-content: space-between;
+        &.jc-end {
+          justify-content: flex-end;
+        }
       }
     }
     &-wrap {
@@ -90,6 +93,10 @@
     .photo-list__actions-icon {
       opacity: .2;
     }
+    &-album {
+      flex: auto;
+      text-align: right;
+    }
   }
   &__name {
     margin-bottom: 10px;
@@ -145,4 +152,8 @@
       }
     }
   }
+}
+
+.user-albums {
+  background-color: $bg-color;
 }

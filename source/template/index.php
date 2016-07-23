@@ -3,7 +3,7 @@ $PAGE['meta_title'] = "Главная";
 include("./common/header.tpl.php");
 ?>
 
-<section class="new-photo">
+<section class="new-photo wrap-padding">
     <div class="layout-main">
         <h1 class="base-ttl">Новое в мире</h1>
         <div class="photo-list">
@@ -69,7 +69,7 @@ include("./common/header.tpl.php");
     </div>
 </section>
 
-<section class="user-albums">
+<section class="user-albums wrap-padding">
     <div class="layout-main">
         <div class="base-ttl">Мои альбомы</div>
         <div class="photo-list">
@@ -93,7 +93,9 @@ include("./common/header.tpl.php");
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./../assets/img/icons/sprite.svg#edit"></use>
                             </svg>
                         </a>
-                        <a href="" class="photo-list__album-name">Альбом <?=$i?></a>
+                        <div class="photo-list__info-album">
+                            <a href="" class="photo-list__album-name">Альбом <?=$i?></a>
+                        </div>
                     </div>
                 </div>
             </div>
