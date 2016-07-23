@@ -1,5 +1,5 @@
     </main>
-    <footer class="footer" style="background-image: url(./../assets/img/content/photo/photo_src/photo_1.jpg);">
+    <footer class="footer"<?if ($page!='search') {?> style="background-image: url(./../assets/img/content/photo/photo_src/photo_<?=$page=='album' ? '2' : '1'?>.jpg);"<?}?>>
         <div class="layout-main">
             <div class="footer__container">
                 <div class="footer__text">Перед вами сервис, который поможет вам организовать свои<br> фотографии в альбомы и поделиться ими со всем миром!</div>

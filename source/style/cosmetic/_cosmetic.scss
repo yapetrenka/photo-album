@@ -37,6 +37,9 @@
   font-size: rem(42px);
   font-family: $font-family-heading;
   margin: 0 0 rem(30px);
+  &_sm {
+    font-size: rem(21px);
+  }
 }
 
 .wrap-padding {

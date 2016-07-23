@@ -1,5 +1,6 @@
 <?
 $PAGE['meta_title'] = "Альбом";
+$page = 'album';
 include("./common/header_album.tpl.php");
 ?>
 

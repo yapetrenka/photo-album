@@ -1,5 +1,6 @@
 .footer {
   background: {
+    color: $base-color-lighter;
     size: cover;
     position: 50% 70%;
     repeat: no-repeat;
@@ -21,9 +22,10 @@
     position: relative;
   }
   &__text {
-
+    line-height: 1.5;
   }
   &__copy {
+    line-height: 1.5;
     opacity: .4;
     text-align: right;
   }
