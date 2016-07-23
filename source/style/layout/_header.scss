@@ -4,13 +4,44 @@
     position: 50% 0;
     repeat: no-repeat;
   };
+  position: relative;
+  &_album {
+    .layout-main,
+    .header__panel {
+      position: relative;
+    }
+    &:before {
+      background-color: rgba(#000, .5);
+      content: '';
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
   &__top {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     height: 240px;
     padding: 20px 0;
   }
+  &__desc {
+    color: $light-color;
+    margin: 0 20px;
+    max-width: 740px;
+    text-align: center;
+  }
+  &__ttl {
+    font-size: rem(21px);
+    margin: 0 0 .5em;
+  }
+  &__text {
+    line-height: 1.5;
+  }
   &__actions {
+    align-self: flex-start;
     text-align: right;
     &-item {
       margin-bottom: 10px;
@@ -47,6 +78,18 @@
   }
   &__social {
     margin-top: rem(15px);
+  }
+  &_sm {
+    align-self: flex-start;
+    .user__ava {
+      height: 50px;
+      margin-right: $gutter;
+      width: 50px;
+    }
+    .user__name {
+      font-size: rem(16px);
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -92,5 +135,22 @@
     .icon {
       fill: $base-color-light;
     }
+  }
+}
+
+.album-info {
+  align-items: center;
+  display: flex;
+  height: $gutter*2;
+  justify-content: center;
+  &__item {
+    font-weight: bold;
+    margin-left: 40px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  &__count {
+    font-family: $font-family-heading;
   }
 }

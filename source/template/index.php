@@ -88,12 +88,14 @@ include("./common/header.tpl.php");
                         </a>
                     </div>
                     <div class="photo-list__info">
-                        <a href="" class="photo-list__album-edit">
-                            <svg class="icon svg-edit-dims">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./../assets/img/icons/sprite.svg#edit"></use>
-                            </svg>
-                        </a>
-                        <div class="photo-list__info-album">
+                        <div class="photo-list__info-left">
+                            <a href="" class="photo-list__album-edit">
+                                <svg class="icon svg-edit-dims">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./../assets/img/icons/sprite.svg#edit"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="photo-list__info-right">
                             <a href="" class="photo-list__album-name">Альбом <?=$i?></a>
                         </div>
                     </div>

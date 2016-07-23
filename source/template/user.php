@@ -23,7 +23,7 @@ include("./common/header.tpl.php");
                             </a>
                         </div>
                         <div class="photo-list__info">
-                            <div class="photo-list__info-album">
+                            <div class="photo-list__info-right">
                                 <a href="" class="photo-list__album-name">Альбом <?=$i?></a>
                             </div>
                         </div>
