@@ -1,0 +1,25 @@
+.gallery {
+  &__img {
+
+  }
+  &__info {
+    padding: $gutter;
+    &-header {
+      @extend %justify-content;
+      .user {
+        color: $text-color;
+      }
+    }
+    &-content {
+      margin-top: 15px;
+    }
+    &-title {
+      font-size: 21px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    &-desc {
+      line-height: 1.5;
+    }
+  }
+}

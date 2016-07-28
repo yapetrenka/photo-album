@@ -52,6 +52,7 @@
     line-height: 1.5;
   }
   &__actions {
+    flex: none;
     align-self: flex-start;
     text-align: right;
     width: 180px;

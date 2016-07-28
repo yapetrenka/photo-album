@@ -238,9 +238,6 @@ button {
   &:focus {
     opacity: 1;
   }
-  &:active {
-    top: 1px;
-  }
   &:before,
   &:after {
     background-color: $base-color-light;
@@ -304,7 +301,7 @@ button {
     &:focus {
       opacity: 1;
     }
-    &:before,
+    /*&:before,
     &:after {
       content: '';
       display: block;
@@ -329,31 +326,44 @@ button {
       border-top-width: 21px;
       border-bottom-width: 21px;
       opacity: 0.7;
+    }*/
+    .icon {
+      fill: $light-color;
+    }
+    &:after {
+      height: 100%;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
     }
 
   }
 
   .mfp-arrow-left {
-    left: 0;
-    &:after {
+    left: 50%;
+    margin-left: -430px;
+    /*&:after {
       border-right: 17px solid $mfp-controls-color;
       margin-left: 31px;
     }
     &:before {
       margin-left: 25px;
       border-right: 27px solid $mfp-controls-border-color;
-    }
+    }*/
   }
 
   .mfp-arrow-right {
-    right: 0;
-    &:after {
+    margin-right: -430px;
+    right: 50%;
+    /*&:after {
       border-left: 17px solid $mfp-controls-color;
       margin-left: 39px
     }
     &:before {
       border-left: 27px solid $mfp-controls-border-color;
-    }
+    }*/
   }
 }
 

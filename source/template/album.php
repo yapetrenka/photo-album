@@ -4,7 +4,7 @@ $page = 'album';
 include("./common/header_album.tpl.php");
 ?>
 
-<section class="wrap-padding">
+<section class="wrap-padding-v">
     <div class="layout-main">
         <div class="photo-list">
             <?for ($i=1; $i<=7; $i++) {

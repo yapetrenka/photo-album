@@ -1,7 +1,7 @@
 <div class="photo-list__item photo-list__item_photo">
     <div class="photo-list__item-wrap">
         <div class="photo-list__photo photo-list__photo_darken">
-            <a href="./../assets/img/content/photo/photo_preview/forest/photo_<?=$i?>.jpg" class="image-link">
+            <a href="./../template/blocks/gallery_item.tpl.php" class="gallery-link">
                 <img src="./../assets/img/content/photo/photo_preview/forest/photo_<?=$i?>.jpg" alt="Фото <?=$i?>" class="photo-list__image">
                 <div class="photo-list__hover">
                     <svg class="icon svg-loupe-dims photo-list__loupe">

@@ -12,8 +12,8 @@
 - [Страница пользователя][link3]
 - [Альбом другого пользователя][link4]
 - [Мой альбом][link5]
-- [Рзультаты поиска][link6]
-- [Элементы (попапы)][link7]
+- [Результаты поиска][link6]
+- [Элементы][link7]
 
 [link1]: <http://olaola.esy.es/photo-album/template/login.php>
 [link2]: <http://olaola.esy.es/photo-album/template/?editable>
